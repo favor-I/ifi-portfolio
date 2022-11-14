@@ -46,7 +46,7 @@ const ContactMe = () => {
             <Box color="#ffffff" width="42%" px="4em" py="5em" height="inherit" bg="#1C41B0">
             <Flex direction="column" >
                 <Flex direction="column" fontWeight="700">
-                    <marquee>Form functionality in construction. Please send direct mail. Thanks</marquee>
+                    {/* <marquee>Form functionality in construction. Please send direct mail. Thanks</marquee> */}
                     <Text fontSize="20px" color="#FFFFFFB2">Need a Service?</Text>
                     <Text fontSize="26px">Send  A Message</Text>
                 </Flex>
