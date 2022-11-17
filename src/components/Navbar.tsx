@@ -50,7 +50,7 @@ const Navbar:React.FC<Props> = ({navREF, aboutREF, contactREF, serviceREF, proje
   const handleNavBg = () => {
     window.scrollY > 20 ? setBgColor('#F6F8FE'): bgColor
     window.scrollY < 20 ? setBgColor(bgColor): bgColor
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
   }
 
   return (
