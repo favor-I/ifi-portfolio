@@ -5,13 +5,10 @@ import phoneIcon from '../assets/svg/contact/phoneIcon.svg'
 import { Box, Button, Flex, FormControl, Input, Text, Textarea } from '@chakra-ui/react'
 
 const ContactMe = () => {
-    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-        // event.preventDefault();
-        console.log(event)
-
-        console.log('Check');
-
-    }
+    // const handleClick = (event: any) => {
+    //     console.log(event)
+    //     console.log(typeof(event))
+    // }
   return (
     <Box px="">
         <Flex direction="row">
@@ -51,9 +48,8 @@ const ContactMe = () => {
                     <Text fontSize="26px">Send  A Message</Text>
                 </Flex>
                 <Flex>
-                    <form onSubmit={()=>handleSubmit} >
+                    <form>
                         <FormControl borderColor="#FFFFFF" marginTop="1em"  width="20em" isRequired={true}>
-                            {/* <Flex height="20em" direction="column" > */}
                                 <FormControl>
                                     <Input type="text" paddingLeft="0px" _placeholder={{color:"#FFFFFF", fontWeight:"small"}} border="none" borderBottom="1px" borderRadius="none" placeholder='Enter Full name' color=""></Input>
                                 </FormControl>
@@ -63,8 +59,7 @@ const ContactMe = () => {
                                 <FormControl>
                                     <Textarea paddingLeft="0px" _placeholder={{color:"#FFFFFF", fontWeight:"small"}} border="none" borderBottom="1px"  borderRadius="none" placeholder='Write a message' color=""></Textarea>
                                 </FormControl>
-                                <Button onClick={()=> handleSubmit} width="193px" marginTop="2em" bg="#FFFFFF" color="#2351DC"> Send message</Button>
-                            {/* </Flex> */}
+                                <Button type="submit" width="193px" marginTop="2em" bg="#FFFFFF" color="#2351DC"> Send message</Button>
                         </FormControl>
                     </form>
                 </Flex>
