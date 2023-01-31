@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { linkedIn, twitter } from '../assets/svg/Socials'
-import { Box, Center, Flex, Text } from '@chakra-ui/react'
+import { Box, Center, Flex, Text, Link } from '@chakra-ui/react'
 import profilePicture from '../assets/image/profile.png'
 const LandingSection = () => {
     const name: string = 'Favour Ifeanacho' 
@@ -13,12 +13,12 @@ const LandingSection = () => {
                     <Text color="#2351DC" fontSize="15px" fontWeight="400">HI THERE</Text>
                     <Text color="#2351DC" fontSize="25px" fontWeight="700" textTransform="uppercase">I AM {name}</Text>
                     <Box fontWeight="800" fontSize="45px" lineHeight="60px">
-                        <Text >A Top-notch Developer</Text>
-                        <Text >and Photographer.</Text>
+                        <Text >A Software Engineer</Text>
+                        <Text >and I love  Photography.</Text>
                     </Box>
                     <Flex paddingTop="1em" width="7em" justifyContent="space-between">
-                        <img src={twitter} alt="Twitter icon svg"/>
-                        <img src={linkedIn} alt="Twitter icon svg"/>
+                        <Link href="https://www.twitter.com/iconictechie" isExternal><img src={twitter} alt="Twitter icon svg"/></Link>
+                        <Link href="https://www.linkedin.com/in/ifeanacho-favour/" isExternal><img src={linkedIn} alt="Twitter icon svg"/></Link>
                     </Flex>
                 </Box>
                 <Box paddingTop="8.3em" bg="#D3DCF8" width="565px" height="">

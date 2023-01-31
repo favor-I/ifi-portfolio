@@ -1,5 +1,5 @@
 import { Box, Flex, Grid, Text } from '@chakra-ui/react'
-import { js, php } from '../assets/svg/skills'
+import { js, php, tailwind, react, } from '../assets/svg/skills'
 import React from 'react'
 
 const MySkill = () => {
@@ -7,6 +7,14 @@ const MySkill = () => {
         {
             imagePath: js,
             title: 'Javascript'
+        },
+        {
+            imagePath: react,
+            title: 'React'
+        },
+        {
+            imagePath: tailwind,
+            title: 'Tailwind'
         },
         {
             imagePath: php,
@@ -23,7 +31,7 @@ const MySkill = () => {
             <Grid templateColumns="auto auto">
                 {
                     skills.map((skill) => (
-                        <Flex key={skill.title}>
+                        <Flex marginTop="2em" key={skill.title}>
                             <img width="70px" height="70px" src={skill.imagePath} alt="skill svg for js" />
                             <Flex marginLeft="1em" align="center">
                             <Text fontSize="20px">{skill.title}</Text>

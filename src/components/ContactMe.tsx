@@ -18,7 +18,7 @@ const ContactMe = () => {
                 <Text width="350px" lineHeight="27px">You could reach out to me on the following social media platforms </Text>
                 <Flex marginTop="1em" justifyContent="space-between" width="6.8em">
                     <img src={linkedIn} alt="linked svg" /> 
-                    <img src={twitter} alt="twitter svg" /> 
+                    <img src={twitter} alt="twitter icon svg" /> 
                 </Flex>
                 <Box>
                     <Flex direction="column" marginTop="3em">
@@ -33,17 +33,16 @@ const ContactMe = () => {
                             <img src={phoneIcon} alt="mail icon svg"/>
                             <Flex direction="column" mx="1em">
                                 <Text>+234-9028-416176</Text>
-                                <Text>Send a message anytime!</Text>
+                                <Text>Drop a call anytime!</Text>
                             </Flex>
                         </Flex>
                     </Flex>
                 </Box>
             </Flex>
             </Box>
-            <Box color="#ffffff" width="42%" px="4em" py="5em" height="inherit" bg="#1C41B0">
+            {/* <Box color="#ffffff" width="42%" px="4em" py="5em" height="inherit" bg="#1C41B0">
             <Flex direction="column" >
                 <Flex direction="column" fontWeight="700">
-                    {/* <marquee>Form functionality in construction. Please send direct mail. Thanks</marquee> */}
                     <Text fontSize="20px" color="#FFFFFFB2">Need a Service?</Text>
                     <Text fontSize="26px">Send  A Message</Text>
                 </Flex>
@@ -64,7 +63,7 @@ const ContactMe = () => {
                     </form>
                 </Flex>
             </Flex>
-            </Box>
+            </Box> */}
 
         </Flex>
 

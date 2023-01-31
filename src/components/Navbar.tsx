@@ -64,8 +64,8 @@ const Navbar:React.FC<Props> = ({navREF, aboutREF, contactREF, serviceREF, proje
                 <Link onClick={handleConcactRef} _hover={{'cursor': 'pointer', 'color':'blue'}} width=""><Text>Contact Me</Text></Link>
             </Flex>
             <Flex>
-                <img src={twitter} alt="Twitter icon svg"/>
-                <img src={linkedIn} alt="Twitter icon svg"/>
+              <Link href="https://www.twitter.com/iconictechie" isExternal><img src={twitter} alt="Twitter icon svg"/></Link>
+              <Link href="https://www.linkedin.com/in/ifeanacho-favour/" isExternal><img src={linkedIn} alt="Twitter icon svg"/></Link>
             </Flex>
         </Flex>
     </>
