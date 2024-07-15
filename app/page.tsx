@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="">
+    <section className=" bg px-[10%]">
 
     </section>
   );
